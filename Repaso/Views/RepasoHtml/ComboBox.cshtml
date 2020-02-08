@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "ComboBox";
+}
+
+<h2>ComboBox</h2>
+
+<select id="cboDias">
+    <option value="1">Lunes</option>
+    <option value="2">Martes</option>
+    <option value="3">Miercoles</option>
+</select>
+
+<input type="button" value="Obtener ID" id="btnValor" />
+
+<script>
+
+    var btnValor = document.getElementById("btnValor");
+
+    btnValor.onclick = function () {
+
+        var dias = document.getElementById("cboDias").value;
+
+        alert(dias);
+
+
+    }
+
+
+</script>
+
